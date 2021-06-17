@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ONLINE MOVIE BOOKING</title>
+    <link rel="stylesheet" type="text/css" href="mainindex.css">
+</head>
+
+<body>
+    <center>
+        <a href="index.html"><img src="LOGO1.JPG" class="logo"> </a>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="bookamovie.html">Book A movie</a>
+            <a href="aboutus.html">About Us</a>
+            <div class="sign">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </center>
+    <center>
+        <h2>
+            <p class="btmnav">Whether you are a self confessed movie buff or one of those who live cinema every day, if the silver screen is religion to you and you want to catch all the latest movies in a theatre, then We have made your life more convenient!
+            </p>
+        </h2>
+    </center>
+    <!--SLIDE SHOW-->
+    <center>
+        <div class="slideshow">
+           <a href="mavengers.html"> <img class="mySlides" src="avengers.JPG" style="width:890px;height: 330px"></a>
+           <a href="mcapmarvel.html"> <img class="mySlides" src="capmarvel.png" style="width:990px;height: 330px"></a>
+            <a href="mshazam.html"><img class="mySlides" src="shazam.JPG" style="width:990px;height: 330px"></a><br>
+            <center><button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button></center>
+        </div>
+    </center>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <marquee>
+        <h1>***LATEST OFFER BOOK 3 TICKETS AT PRICE 2***</h1>
+    </marquee>
+    <div class="grid" style="text-align: center">
+        <div class="grid-item"><a href="mbadla.html"> <img src="badla.JPG"  height="350px" width="250px">
+                <figcaption>Badla</figcaption>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp; Rating:&#11088;&#11088;&#11088;
+        </div>
+        <div class="grid-item"><a href="mdumbo.html"><img src="dumbo.JPG" height="350px" width="250px">
+                <figcaption>Dumbo</figcaption>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Rating:&#11088;&#11088;&#11088;
+        </div>
+        <div class="grid-item"><a href="mgullyboy.html"><img src="gullyboy.JPG"  height="350px" width="250px">
+                <figcaption>Gully Boy</figcaption>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;     Rating:&#11088;&#11088;&#11088;&#11088;
+        </div>
+        <div class="grid-item"><a href="mhellboy.html"><img src="hellboy.JPG" height="350px" width="250px">
+               <figcaption>Hellboy</figcaption>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Rating:&#11088;&#11088;&#11088;&#11088;
+        </div>
+        <div class="grid-item"><a href="mkalank.html"><img src="kalank.JPG" height="350px" width="250px" >
+                <figcaption>Kalank</figcaption>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Rating:&#11088;&#11088;&#11088;
+        </div>
+        <div class="grid-item"><a href="mkesari.html"><img src="kesari.JPG" height="350px" width="250px">
+                <figcaption>Kesari</figcaption>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Rating:&#11088;&#11088;&#11088;&#11088;
+        </div>
+    </div>
+
+</body>
+</html>
